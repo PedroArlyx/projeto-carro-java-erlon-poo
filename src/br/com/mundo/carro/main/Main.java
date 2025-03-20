@@ -10,7 +10,7 @@ public class Main {
                 "P07NR",
                 false,
                 false,
-                100,
+                0,
                 300
         );
         carro.ligar();

@@ -12,17 +12,18 @@ public class Carro {
 
     public  Carro(String modelo,String chassi,String placa,boolean estaLigado,boolean emMovimento,double quantidadeCombustivel,int velocidade){
 
-        this.modelo =modelo;
-        this.chassi= chassi;
-        this.placa =placa;
-        this.estaLigado= estaLigado;
-        this.emMovimento =emMovimento;
-        this.quantidadeCombustivel= quantidadeCombustivel;
-        this.velocidade= velocidade;
+        this.modelo = modelo;
+        this.chassi = chassi;
+        this.placa = placa;
+        this.estaLigado = estaLigado;
+        this.emMovimento = emMovimento;
+        this.quantidadeCombustivel = quantidadeCombustivel;
+        this.velocidade = velocidade;
 
     }
+
     public void ligar() {
-        if( 0 <= quantidadeCombustivel) {
+        if( 0 < quantidadeCombustivel) {
             if (this.estaLigado) {
                 System.out.println("o carro ja estar ligando! ");
             } else {
@@ -58,7 +59,7 @@ public class Carro {
         }else{
             velocidade -=30;
             System.out.println("o carro estar freiando!");
-            System.out.printf("km: %d",velocidade);
+            System.out.printf("km: %d\n",velocidade);
         }
     }
     public void parar(){
@@ -69,12 +70,12 @@ public class Carro {
         }
     }
     public void exiberInfos(){
-        System.out.printf("modelo: %s",modelo);
-        System.out.printf("chassi %s",chassi);
-        System.out.printf("placa %s",placa);
+        System.out.printf("modelo: %s \n",modelo);
+        System.out.printf("chassi %s\n",chassi);
+        System.out.printf("placa %s\n",placa);
         System.out.println(estaLigado);
         System.out.println(emMovimento);
         System.out.printf("quantidade: %.3f \n",quantidadeCombustivel);
-        System.out.printf("km: %d",velocidade);
+        System.out.printf("km: %d\n",velocidade);
     }
 }
